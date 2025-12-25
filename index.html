@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas 2025 | From Mitchelle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="playMusic()">
+
+    <audio id="bg-music" loop>
+        <source src="merry.mkv" type="audio/mpeg">
+    </audio>
+
+    <div id="splash">
+        <div class="snow-container" id="snow-splash"></div>
+        <div class="splash-content">
+            <div class="carousel">
+                <img src="pic1.jpg" id="carousel-img" alt="Holiday Anime">
+            </div>
+            <h1 class="glow-text">Merry Christmas from Mitchelle</h1>
+            <p class="sub-text">...and a happy prosperous new year, ho ho ho!</p>
+            <p class="sub-text animate-flicker">Wishing you magic, joy, and legendary adventures.</p>
+            
+            <div class="timer-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-site" class="hidden">
+        <div class="snow-container" id="snow-main"></div>
+        
+        <div class="card">
+            <div class="main-carousel">
+                <img src="pic1.jpg" id="main-carousel-img" alt="Anime Santa">
+            </div>
+
+            <div id="input-ui">
+                <h2>A Special Message for You</h2>
+                <input type="text" id="userName" placeholder="Enter your name..." autocomplete="off">
+                
+                <label for="wishType">Choose your vibe:</label>
+                <select id="wishType">
+                    <option value="heartfelt">❤️ Heartfelt & Warm</option>
+                    <option value="anime">🔥 Ultimate Anime Fan</option>
+                    <option value="witty">😂 Witty & Funny</option>
+                    <option value="inspirational">🌟 Inspirational New Year</option>
+                    <option value="classic">🎄 Classic Christmas</option>
+                </select>
+
+                <button onclick="showGreeting()">Open My Card</button>
+            </div>
+
+            <div id="result-ui" class="hidden">
+                <h1 id="user-title"></h1>
+                <p id="user-msg"></p>
+                <div class="signature">With love, <br><strong>Mitchelle</strong></div>
+                <button class="secondary-btn" onclick="resetForm()">Send to someone else</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
